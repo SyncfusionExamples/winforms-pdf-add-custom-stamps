@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>SyncfusionPDFStamp_WinFormsApp</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SyncfusionPDFStamp-WinFormsApp</AssemblyName>
+    <!-- WFO1000 enforces property-bag serialization for designer-exposed controls.
+         Our custom CardPanel / StyledButton only use properties programmatically
+         — they are never dropped on the WinForms designer — so this check is noise. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="35.1.37" />
+  </ItemGroup>
+
+</Project>
